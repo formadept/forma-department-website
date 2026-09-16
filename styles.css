@@ -1,0 +1,483 @@
+
+:root{--green:#123b2d;--green2:#08291f;--cream:#f2efe5;--ink:#13271f;--lime:#c8df87;--line:rgba(19,39,31,.24)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",Arial,sans-serif;background:var(--green);color:var(--cream)}img{display:block;width:100%}a{color:inherit;text-decoration:none}.nav{height:72px;position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 4.5vw;background:rgba(8,41,31,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(242,239,229,.16)}.brand{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.08em}.brand b{font-family:"Oswald";font-size:25px;border:1px solid currentColor;border-radius:50%;padding:2px 7px;transform:rotate(-8deg)}nav{display:flex;align-items:center;gap:27px;text-transform:uppercase;font-size:10px;letter-spacing:.09em}.nav-cta{border:1px solid rgba(255,255,255,.6);padding:10px 15px;border-radius:3px}.hero{min-height:720px;display:grid;grid-template-columns:55% 45%;background:radial-gradient(circle at 80% 25%,#28654f 0,#123b2d 40%,#08291f 82%);overflow:hidden}.hero-copy{padding:10vh 4.5vw 8vh;display:flex;flex-direction:column;justify-content:center;z-index:2}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:10px;font-weight:700;margin:0 0 10px}.hero h1,.section h2,.contact h2,.feature h3{font-family:"Oswald",Impact,sans-serif;line-height:.9;letter-spacing:-.025em;margin:0}.hero h1{font-size:clamp(68px,7.6vw,124px)}.lead{font-size:18px;line-height:1.55;max-width:650px;color:#e3e2d8}.actions{display:flex;gap:12px;margin-top:20px}.button{display:inline-block;border:0;border-radius:3px;padding:14px 24px;text-transform:uppercase;letter-spacing:.07em;font-weight:700;font-size:10px;cursor:pointer}.light{background:var(--cream);color:var(--ink)}.ghost{border:1px solid rgba(255,255,255,.65)}.hero-art{position:relative;min-height:720px}.mega{position:absolute;right:-4vw;top:50%;transform:translateY(-53%);font:700 min(33vw,510px)/.8 "Oswald";letter-spacing:-.08em;color:transparent;-webkit-text-stroke:2px rgba(242,239,229,.7)}.ring{position:absolute;border:1px solid rgba(200,223,135,.5);border-radius:50%;transform:rotate(-18deg)}.r1{width:85%;height:38%;right:-5%;top:30%}.r2{width:105%;height:50%;right:-22%;top:24%}.tag{position:absolute;right:5vw;bottom:9vh;font-size:10px;letter-spacing:.18em;transform:rotate(-8deg)}.section{padding:80px 4.5vw}.cream{background:var(--cream);color:var(--ink)}.section-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:42px}.section-head h2{font-size:clamp(48px,5.5vw,84px)}.section-head>p{text-align:right;text-transform:uppercase;font-size:10px;letter-spacing:.08em}.inverse{border-color:rgba(255,255,255,.24)}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.services span{font-family:"Oswald";font-size:34px;opacity:.35}.services h3,.process h3{font-family:"Oswald";text-transform:uppercase;line-height:1.05}.services p,.process p{font-size:14px;line-height:1.5}.work{background:linear-gradient(145deg,#174a38,#08291f)}.feature{display:grid;grid-template-columns:28% 72%;gap:36px;padding:58px 0;border-top:1px solid rgba(255,255,255,.2)}.feature:first-of-type{border-top:0;padding-top:0}.feature-copy{position:sticky;top:105px;align-self:start;padding-right:12px}.feature h3{font-size:clamp(50px,5vw,78px);margin-bottom:18px}.feature-copy>p:not(.eyebrow):not(.meta){font-size:14px;line-height:1.6;max-width:380px;color:#deddd4}.meta{text-transform:uppercase;font-size:9px;letter-spacing:.12em;opacity:.7;margin-top:22px}.gallery{display:grid;gap:12px;align-items:start}.gallery img{background:#eee;object-fit:cover}.g6{grid-template-columns:repeat(2,1fr)}.g6 img{aspect-ratio:1/1}.g4{grid-template-columns:repeat(2,1fr)}.g4 img{aspect-ratio:1/1;object-fit:contain;background:#f4f2ed}.g3{grid-template-columns:1.2fr 1fr}.g3 img{aspect-ratio:1/1;object-fit:contain;background:#fff}.g3 img:first-child{grid-row:span 2;aspect-ratio:auto;height:100%}.g8{grid-template-columns:repeat(3,1fr)}.g8 img{aspect-ratio:1/1;object-fit:contain;background:#fff}.archive{padding-bottom:10px}.process{display:grid;grid-template-columns:repeat(3,1fr);gap:7vw}.process b{font-family:"Oswald";font-size:46px;font-weight:500;opacity:.5}.process h3{font-size:24px;margin:10px 0 4px}.contact{padding:90px 4.5vw;display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:linear-gradient(120deg,#0b3327,#174a38)}.contact h2{font-size:clamp(58px,7vw,105px)}.contact>div>p:not(.eyebrow){max-width:590px;line-height:1.6}.email{display:inline-block;margin-top:18px;font-weight:700}form{display:flex;flex-direction:column;gap:10px;justify-content:center}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}input,textarea{width:100%;padding:14px 15px;background:transparent;border:1px solid rgba(242,239,229,.42);border-radius:3px;color:white;font:inherit}textarea{resize:vertical}::placeholder{color:rgba(255,255,255,.62)}form .button{width:100%}.form-note{font-size:11px;opacity:.65;margin:0}footer{padding:25px 4.5vw;display:flex;justify-content:space-between;gap:30px;text-transform:uppercase;letter-spacing:.1em;font-size:9px;border-top:1px solid rgba(255,255,255,.18)}@media(max-width:900px){nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding-top:70px}.hero-art{min-height:360px}.mega{font-size:58vw}.services{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}.feature-copy{position:static}.g8{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.process{grid-template-columns:1fr;gap:25px}}@media(max-width:560px){.nav{height:62px}.brand span{display:none}.nav-cta{padding:9px 10px}.hero-copy{padding:60px 22px 35px}.hero h1{font-size:57px}.lead{font-size:16px}.hero-art{min-height:270px}.section,.contact{padding:55px 22px}.services{grid-template-columns:1fr}.section-head>p{display:none}.gallery,.g6,.g4,.g3,.g8{grid-template-columns:1fr}.g3 img:first-child{grid-row:auto;height:auto}.feature{gap:22px;padding:42px 0}.feature h3{font-size:52px}.two{grid-template-columns:1fr}footer{padding:22px;flex-direction:column}}
+
+/* v3 refinements */
+.brand{display:block;width:245px;max-width:32vw}
+.brand img{width:100%;height:auto;display:block}
+
+/* Four evenly spaced service columns after removing Advertising Material */
+.service-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(28px,4vw,64px);
+}
+.service-grid article{min-width:0}
+
+/* Recent work transitions into a light gallery area */
+.work{
+  position:relative;
+  background:#f5f2e9;
+  color:#102d24;
+  border-top:1px solid rgba(16,45,36,.12);
+}
+.work::before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:-90px;
+  height:90px;
+  pointer-events:none;
+  background:linear-gradient(to bottom,rgba(18,59,45,0),#f5f2e9);
+}
+.work .eyebrow,.work .muted,.work .meta,.work p{color:rgba(16,45,36,.72)}
+.work h2,.work h3,.work h4{color:#102d24}
+.work .rule,.work hr{border-color:rgba(16,45,36,.16)}
+.work .gallery img{
+  filter:none;
+  background:transparent;
+}
+
+/* Greenlife: preserve full promotional artwork without aggressive cropping */
+.g6 img:nth-child(n+3){
+  object-fit:contain;
+  background:#fff;
+  width:88%;
+  justify-self:center;
+  height:auto;
+  max-height:620px;
+}
+
+@media(max-width:900px){
+  .brand{width:210px;max-width:45vw}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+}
+@media(max-width:560px){
+  .brand{width:175px;max-width:55vw}
+  .service-grid{grid-template-columns:1fr}
+  .g6 img:nth-child(n+3){width:100%;max-height:none}
+}
+
+/* v4 colour rhythm ---------------------------------------------------- */
+:root{--project-cream:#f5f2e9;--contrast-green:#174a38;--contrast-deep:#10392c;}
+
+/* WHAT I DO + HOW IT WORKS share the contrasting green treatment */
+.contrast-section{
+  background:linear-gradient(135deg,var(--contrast-green),var(--contrast-deep)) !important;
+  color:#f5f2e9 !important;
+}
+.contrast-section h2,
+.contrast-section h3,
+.contrast-section h4,
+.contrast-section p,
+.contrast-section .eyebrow,
+.contrast-section .muted,
+.contrast-section span{
+  color:#f5f2e9 !important;
+}
+.contrast-section p,.contrast-section .muted{opacity:.78}
+.contrast-section hr,
+.contrast-section .rule,
+.contrast-section article{border-color:rgba(245,242,233,.22) !important;}
+
+/* RECENT PROJECTS stays cream */
+.work{
+  background:var(--project-cream) !important;
+  color:#10392c !important;
+}
+.work::before{display:none !important}
+.work h2,.work h3,.work h4{color:#10392c !important}
+.work p,.work .eyebrow,.work .muted,.work .meta{color:rgba(16,57,44,.72) !important}
+.work .gallery img{filter:none !important;}
+
+/* Keep the transition crisp and intentional between each major band */
+.contrast-section,.work{position:relative;isolation:isolate}
+
+/* v5: stronger section rhythm + case study presentation */
+#services,#process{
+  background:linear-gradient(135deg,#174a38,#0f382b) !important;
+  color:#f5f2e9 !important;
+}
+#services h2,#services h3,#services p,#services .eyebrow,#services span,
+#process h2,#process h3,#process p,#process .eyebrow,#process b{
+  color:#f5f2e9 !important;
+}
+#services p,#process p{opacity:.82}
+#services .section-head,#process .section-head,
+#services article,#process article{border-color:rgba(245,242,233,.22) !important}
+
+/* exact four-column service grid */
+#services .services{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:48px !important;
+  width:100%;
+}
+#services .services article{width:auto !important;margin:0 !important}
+
+/* Cream project band remains distinct */
+#work,.work{background:#f5f2e9 !important;color:#10392c !important}
+
+/* Each major project is now a designed mini case study */
+.case-study{width:100%;min-width:0}
+.case-study img{
+  display:block;
+  width:100%;
+  height:auto;
+  background:#f5f2e9;
+  box-shadow:0 18px 44px rgba(16,57,44,.12);
+}
+.feature{align-items:start}
+.feature-copy{position:sticky;top:110px}
+
+@media(max-width:900px){
+  #services .services{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:34px !important}
+  .feature-copy{position:static}
+}
+@media(max-width:560px){
+  #services .services{grid-template-columns:1fr !important}
+}
+
+/* v6 Canard presentation */
+.canard-feature{
+  display:block !important;
+  width:100%;
+}
+.canard-presentation{
+  width:100%;
+  max-width:none;
+}
+.canard-presentation img{
+  width:100%;
+  height:auto;
+  display:block;
+  box-shadow:none;
+}
+
+/* v8 Greenlife presentation: full-width artwork, matching Canard */
+.greenlife-feature{display:block !important;width:100%;}
+.greenlife-presentation{width:100%;max-width:none;}
+.greenlife-presentation img{width:100%;height:auto;display:block;box-shadow:none;}
+
+/* Flagstix full-width brand presentation */
+.flagstix-feature{display:block!important;padding-top:0!important;}
+.flagstix-feature .flagstix-presentation{width:100%;max-width:none;margin:0;}
+.flagstix-feature .flagstix-presentation img{display:block;width:100%;height:auto;object-fit:contain;}
+
+/* v11 Flagstix: artwork sits flush in project section, no card/shadow treatment */
+.flagstix-feature{display:block!important;width:100%;padding-top:0!important;}
+.flagstix-feature .flagstix-presentation{width:100%;max-width:none;margin:0;background:transparent!important;}
+.flagstix-feature .flagstix-presentation img{display:block;width:100%;height:auto;object-fit:contain;background:transparent!important;box-shadow:none!important;border:0!important;border-radius:0!important;filter:none!important;}
+
+
+/* v12 Precinct full-width brand presentation: replaces entire previous section */
+.precinct-feature{display:block!important;width:100%;padding-top:0!important;}
+.precinct-feature .precinct-presentation{width:100%;max-width:none;margin:0;background:transparent!important;}
+.precinct-feature .precinct-presentation img{display:block;width:100%;height:auto;object-fit:contain;background:transparent!important;box-shadow:none!important;border:0!important;border-radius:0!important;filter:none!important;}
+
+/* v18 Flagstix rebuilt as real HTML/CSS layout — no full-section composite image */
+.flagstix-coded{padding:72px 4vw 42px!important;background:#f5f2e9!important;box-sizing:border-box;border-top:1px solid #315e53;}
+.flagstix-grid{display:grid;grid-template-columns:23% 43% 34%;align-items:start;gap:0;max-width:1700px;margin:0 auto;}
+.flagstix-left,.flagstix-right{position:relative;z-index:2}.flagstix-left{padding-right:24px}.flagstix-right{padding:20px 0 0 18px}.flagstix-coded .eyebrow{margin:0 0 8px;color:#66847d;font-size:11px;letter-spacing:.16em}.flagstix-logo{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;mix-blend-mode:multiply}.flagstix-swatches{display:flex;gap:10px;justify-content:space-between;margin:4px 4px 18px}.flagstix-swatches span{font-size:9px;text-align:center;color:#315e53}.flagstix-swatches i{display:block;width:38px;height:38px;border-radius:50%;background:var(--sw);margin:0 auto 7px}.flagstix-flyer{display:block;width:100%;height:auto;object-fit:contain}.flagstix-centre{align-self:stretch;display:flex;align-items:center;justify-content:center;overflow:visible}.flagstix-centre img{display:block;width:118%;max-width:none;height:auto;object-fit:contain;margin-left:-9%;margin-top:0}.flagstix-right h3{font-family:'Oswald',sans-serif;font-size:clamp(54px,5.1vw,92px);line-height:.88;margin:0 0 22px;color:#06483a;letter-spacing:-.035em}.flagstix-right>p:not(.meta){max-width:540px;font-size:16px;line-height:1.45;color:#315e53;margin:0 0 20px}.flagstix-right .meta{font-size:11px;line-height:1.8;letter-spacing:.18em;text-transform:uppercase;color:#77918b;margin:0 0 22px}.flagstix-aerial{display:block;width:100%;height:auto;object-fit:cover}.flagstix-footer{max-width:1700px;margin:28px auto 0;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;color:#78908a;font-size:10px;letter-spacing:.16em}.flagstix-footer b{height:1px;background:#315e53;display:block}
+@media(max-width:900px){.flagstix-coded{padding:45px 24px 30px!important}.flagstix-grid{grid-template-columns:1fr}.flagstix-left{padding:0}.flagstix-logo{max-width:430px;margin:auto}.flagstix-swatches{max-width:430px;margin:0 auto 20px}.flagstix-flyer{max-width:430px;margin:auto}.flagstix-centre img{width:100%;margin:20px 0}.flagstix-right{padding:10px 0}.flagstix-right h3{font-size:56px}.flagstix-footer{grid-template-columns:1fr;text-align:left}.flagstix-footer b{display:none}}
+
+/* v19 Flagstix finishing fixes */
+.flagstix-logo{aspect-ratio:auto!important;object-fit:contain!important;mix-blend-mode:normal!important;width:94%!important;margin:8px auto 34px!important;background:transparent!important;}
+.flagstix-centre{overflow:hidden!important;}
+.flagstix-centre img{width:108%!important;margin-left:-4%!important;}
+.flagstix-right{overflow:hidden!important;}
+.flagstix-aerial{position:relative!important;z-index:5!important;width:100%!important;max-width:100%!important;margin:0!important;background:#f5f2e9!important;clip-path:inset(0)!important;}
+
+/* v20 — verified Flagstix corrections */
+.flagstix-grid{grid-template-columns:22% 44% 34%!important;}
+.flagstix-left{padding-right:34px!important;overflow:visible!important;}
+.flagstix-logo{width:82%!important;max-width:310px!important;margin:18px auto 34px!important;object-fit:contain!important;}
+.flagstix-centre{overflow:visible!important;position:relative!important;z-index:1!important;}
+.flagstix-centre img{width:100%!important;max-width:100%!important;margin:0!important;object-fit:contain!important;}
+.flagstix-right{overflow:visible!important;padding-left:28px!important;}
+.flagstix-aerial{display:block!important;width:100%!important;height:auto!important;margin:0!important;object-fit:contain!important;position:static!important;transform:none!important;clip-path:none!important;}
+@media(max-width:900px){.flagstix-logo{width:72%!important;max-width:330px!important}.flagstix-centre img{width:100%!important}.flagstix-right{padding-left:0!important}}
+
+/* v21 Flagstix — open-canvas rebuild. No clipping/card containers. */
+.flagstix-coded{overflow:visible!important;background:#f5f2e9!important;}
+.flagstix-grid{grid-template-columns:22% 44% 34%!important;overflow:visible!important;align-items:start!important;}
+.flagstix-left,.flagstix-centre,.flagstix-right{overflow:visible!important;background:transparent!important;box-shadow:none!important;border:0!important;clip-path:none!important;}
+.flagstix-logo{display:block!important;width:82%!important;height:auto!important;max-width:310px!important;aspect-ratio:auto!important;object-fit:contain!important;margin:18px auto 34px!important;background:transparent!important;box-shadow:none!important;border:0!important;}
+.flagstix-centre{display:flex!important;align-items:flex-start!important;justify-content:center!important;padding-top:18px!important;}
+.flagstix-centre img{display:block!important;width:100%!important;height:auto!important;max-width:none!important;margin:0!important;object-fit:contain!important;background:transparent!important;box-shadow:none!important;border:0!important;clip-path:none!important;}
+.flagstix-flyer{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;margin:0!important;background:transparent!important;box-shadow:none!important;border:0!important;clip-path:none!important;}
+.flagstix-aerial{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;margin:0!important;background:transparent!important;box-shadow:none!important;border:0!important;clip-path:none!important;}
+@media(max-width:900px){.flagstix-grid{grid-template-columns:1fr!important}.flagstix-centre{padding-top:20px!important}.flagstix-centre img{width:100%!important}.flagstix-flyer,.flagstix-aerial{width:100%!important;height:auto!important}}
+
+/* v23 Precinct: true open-canvas composition using individual assets */
+.precinct-coded{display:block!important;width:100%;padding:0!important;background:#f5f2e9!important;}
+.precinct-canvas{position:relative;width:100%;aspect-ratio:1882/836;background:#f5f2e9;overflow:hidden;isolation:isolate;}
+.precinct-copy{position:absolute;left:5.2%;top:3.2%;width:23%;z-index:4;}
+.precinct-copy .eyebrow{margin:0 0 8px;font-size:11px;letter-spacing:.15em;color:#66847d!important;}
+.precinct-copy h3{font-family:'Oswald',sans-serif;font-size:clamp(42px,4.25vw,76px);line-height:.91;letter-spacing:-.035em;margin:0 0 14px;color:#073d32!important;}
+.precinct-copy>p:not(.eyebrow):not(.meta){font-size:clamp(11px,1vw,16px);line-height:1.42;margin:0 0 13px;color:#315e53!important;max-width:390px;}
+.precinct-copy .meta{font-size:clamp(8px,.72vw,11px);line-height:1.8;letter-spacing:.14em;text-transform:uppercase;color:#77918b!important;margin:0;}
+.p-logo{display:block;width:78%;height:auto;margin-top:17px;mix-blend-mode:multiply;}
+.p-apparel{position:absolute;left:24.3%;top:2.2%;width:29.5%;height:86%;z-index:2;}
+.p-apparel img{position:absolute;display:block;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(0,0,0,.12));}
+.p-black-shirt{width:82%;left:10%;top:0;z-index:1;}.p-green-shirt{width:78%;left:7%;top:28%;z-index:2;}.p-cream-cap{width:56%;left:-2%;bottom:1%;z-index:3;}
+.p-cans{position:absolute;left:56.8%;top:5.3%;right:4.2%;height:37%;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4%;align-items:end;z-index:3;}
+.p-cans img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply;}
+.p-posters{position:absolute;left:51.5%;right:4.1%;top:46.7%;bottom:12.3%;display:grid;grid-template-columns:repeat(4,1fr);gap:1.2%;z-index:3;}
+.p-posters img{width:100%;height:100%;object-fit:contain;display:block;}
+.precinct-footer{position:absolute;left:5.2%;right:4.2%;bottom:4.2%;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;color:#78908a;font-size:10px;letter-spacing:.16em;z-index:5;}
+.precinct-footer b{height:1px;background:#315e53;display:block;}
+@media(max-width:900px){.precinct-canvas{aspect-ratio:auto;overflow:visible;padding:38px 24px 28px;box-sizing:border-box;display:grid;grid-template-columns:1fr;gap:24px}.precinct-copy,.p-apparel,.p-cans,.p-posters,.precinct-footer{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:auto;height:auto}.precinct-copy{width:100%}.precinct-copy h3{font-size:58px}.p-logo{width:260px}.p-apparel{height:520px}.p-cans{height:260px}.p-posters{height:auto;grid-template-columns:repeat(2,1fr)}.p-posters img{height:auto}.precinct-footer{grid-template-columns:1fr}.precinct-footer b{display:none}}
+
+
+/* Final Precinct section — exact supplied composition, replacing all coded Precinct layers */
+.precinct-exact-feature{display:block!important;width:100%!important;padding:0!important;margin:0!important;background:#f5f2e9!important;overflow:visible!important;}
+.precinct-exact-image{display:block!important;width:100%!important;height:auto!important;max-width:none!important;margin:0!important;padding:0!important;object-fit:contain!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;}
+
+/* Final approved Flagstix presentation — flush artwork with no card, border or shadow */
+.flagstix-final-feature{display:block!important;width:100%!important;padding:0!important;margin:0!important;background:#f5f2e9!important;overflow:visible!important;border:0!important;box-shadow:none!important;}
+.flagstix-final-image{display:block!important;width:100%!important;height:auto!important;max-width:none!important;margin:0!important;padding:0!important;object-fit:contain!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;}
+
+/* Final one-off client work composition */
+.oneoffs-final-feature{display:block!important;width:100%!important;padding:0!important;margin:0!important;background:#f5f2e9!important;overflow:visible!important;border:0!important;box-shadow:none!important;}
+.oneoffs-final-feature .oneoffs-final-presentation{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;background:transparent!important;}
+.oneoffs-final-feature .oneoffs-final-presentation img{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;}
+
+/* Mobile What I Do — compact service rows */
+@media(max-width:560px){
+  #services{padding:38px 22px 34px!important;}
+  #services .section-head{margin-bottom:12px!important;padding-bottom:16px!important;}
+  #services .section-head h2{font-size:48px!important;line-height:.92!important;}
+  #services .services{display:grid!important;grid-template-columns:1fr!important;gap:0!important;}
+  #services .services article{display:grid!important;grid-template-columns:46px minmax(0,1fr)!important;grid-template-areas:"num title" "num copy"!important;column-gap:14px!important;row-gap:5px!important;padding:17px 0!important;margin:0!important;border-bottom:1px solid rgba(245,242,233,.18)!important;align-items:start!important;}
+  #services .services article:last-child{border-bottom:0!important;}
+  #services .services span{grid-area:num!important;font-size:28px!important;line-height:1!important;margin:1px 0 0!important;opacity:.38!important;}
+  #services .services h3{grid-area:title!important;font-size:20px!important;line-height:1.08!important;margin:0!important;}
+  #services .services p{grid-area:copy!important;font-size:13px!important;line-height:1.4!important;margin:0!important;max-width:none!important;}
+}
+
+/* Final typography + divider consistency pass */
+:root{--section-rule:#315e53;--section-rule-light:rgba(245,242,233,.34)}
+
+/* One shared display system for every major coded section heading */
+#services .section-head h2,
+#work > .section-head h2,
+#process .section-head h2,
+#contact h2{
+  font-family:"Oswald",Impact,sans-serif !important;
+  font-weight:700 !important;
+  font-size:clamp(52px,5.5vw,84px) !important;
+  line-height:.90 !important;
+  letter-spacing:-.025em !important;
+}
+
+/* One shared rule weight and full available length */
+#services .section-head,
+#work > .section-head,
+#process .section-head{
+  border-bottom-width:1px !important;
+  border-bottom-style:solid !important;
+  width:100% !important;
+}
+#services .section-head,#process .section-head{border-bottom-color:var(--section-rule-light)!important;}
+#work > .section-head{border-bottom-color:var(--section-rule)!important;}
+
+/* Project separators: identical length, colour and 1px weight. */
+#work > .feature{
+  border-top:1px solid var(--section-rule) !important;
+  width:100% !important;
+}
+#work > .greenlife-feature{border-top:0!important;}
+/* Explicitly restore the missing line above Precinct Brewing Co. */
+#work > .precinct-exact-feature{border-top:1px solid var(--section-rule)!important;}
+
+@media(max-width:560px){
+  #services .section-head h2,
+  #work > .section-head h2,
+  #process .section-head h2,
+  #contact h2{
+    font-size:48px !important;
+    line-height:.92 !important;
+  }
+  #services .section-head,
+  #work > .section-head,
+  #process .section-head{
+    padding-bottom:16px !important;
+  }
+}
+
+/* Mobile Recent Projects cleanup — consistent rhythm, no doubled separator lines */
+@media(max-width:560px){
+  #work{padding:38px 14px 34px!important;}
+  #work > .section-head{
+    margin:0 0 18px!important;
+    padding:0 0 14px!important;
+    border-bottom:1px solid var(--section-rule)!important;
+  }
+  #work > .section-head h2{margin:0!important;}
+
+  /* The project artwork already contains its own visual rules, so remove the
+     extra coded separators that were creating doubled/tripled lines on mobile. */
+  #work > .feature,
+  #work > .greenlife-feature,
+  #work > .canard-feature,
+  #work > .precinct-exact-feature,
+  #work > .flagstix-final-feature,
+  #work > .oneoffs-final-feature{
+    padding:0!important;
+    margin:0 0 16px!important;
+    border-top:0!important;
+    border-bottom:0!important;
+    width:100%!important;
+  }
+  #work > .oneoffs-final-feature{margin-bottom:0!important;}
+
+  #work .case-study,
+  #work .greenlife-presentation,
+  #work .canard-presentation,
+  #work .oneoffs-final-presentation{
+    margin:0!important;
+    padding:0!important;
+    width:100%!important;
+  }
+  #work img,
+  #work .case-study img,
+  #work .precinct-exact-image,
+  #work .flagstix-final-image,
+  #work .oneoffs-final-presentation img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+    background:transparent!important;
+  }
+}
+
+/* Mobile How It Works — compact process rows */
+@media(max-width:560px){
+  #process{padding:38px 22px 34px!important;}
+  #process .section-head{margin:0 0 12px!important;padding:0 0 16px!important;}
+  #process .section-head h2{font-size:48px!important;line-height:.92!important;margin:0!important;}
+  #process .process{display:grid!important;grid-template-columns:1fr!important;gap:0!important;}
+  #process .process article{display:grid!important;grid-template-columns:46px minmax(0,1fr)!important;grid-template-areas:"num title" "num copy"!important;column-gap:14px!important;row-gap:5px!important;padding:17px 0!important;margin:0!important;border-bottom:1px solid rgba(245,242,233,.18)!important;align-items:start!important;}
+  #process .process article:last-child{border-bottom:0!important;}
+  #process .process b{grid-area:num!important;font-size:28px!important;line-height:1!important;margin:1px 0 0!important;opacity:.38!important;}
+  #process .process h3{grid-area:title!important;font-size:20px!important;line-height:1.08!important;margin:0!important;}
+  #process .process p{grid-area:copy!important;font-size:13px!important;line-height:1.4!important;margin:0!important;max-width:none!important;}
+}
+
+/* Desktop polish pass — consistent spacing, rules and uppercase subheadings */
+@media(min-width:901px){
+  /* One consistent uppercase subheading treatment across the coded page. */
+  .eyebrow,
+  #services .eyebrow,
+  #work > .section-head .eyebrow,
+  #process .eyebrow,
+  #contact .eyebrow,
+  .flagstix-coded .eyebrow,
+  .precinct-copy .eyebrow{
+    font-family:"DM Sans",Arial,sans-serif!important;
+    font-size:11px!important;
+    line-height:1.2!important;
+    font-weight:700!important;
+    letter-spacing:.16em!important;
+    text-transform:uppercase!important;
+  }
+
+  /* Major section headers share the same vertical rhythm. */
+  #services .section-head,
+  #work > .section-head,
+  #process .section-head{
+    margin:0 0 54px!important;
+    padding:0 0 24px!important;
+    min-height:0!important;
+  }
+
+  /* Recent Projects: use only the header rule. Project artwork already has
+     its own internal visual rules, so coded rules between boards are removed. */
+  #work{padding-top:72px!important;padding-bottom:72px!important;}
+  #work > .section-head{margin-bottom:56px!important;}
+  #work > .feature,
+  #work > .greenlife-feature,
+  #work > .canard-feature,
+  #work > .precinct-exact-feature,
+  #work > .flagstix-final-feature,
+  #work > .oneoffs-final-feature{
+    border-top:0!important;
+    border-bottom:0!important;
+    margin:0 0 56px!important;
+    padding:0!important;
+    width:100%!important;
+  }
+  #work > .oneoffs-final-feature{margin-bottom:0!important;}
+
+  /* Keep every presentation board flush and identical in treatment. */
+  #work .greenlife-presentation,
+  #work .canard-presentation,
+  #work .precinct-exact-presentation,
+  #work .flagstix-final-presentation,
+  #work .oneoffs-final-presentation{
+    margin:0!important;
+    padding:0!important;
+    width:100%!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  #work .greenlife-presentation img,
+  #work .canard-presentation img,
+  #work .precinct-exact-image,
+  #work .flagstix-final-image,
+  #work .oneoffs-final-presentation img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+}
+
+/* Final line cleanup — one visual rule maximum per project break */
+#work > .section-head{
+  border-bottom:0!important;
+}
+
+@media(min-width:901px){
+  /* The presentation artwork contains its own rules. Keep the website from
+     adding a second rule and tighten the rhythm between boards. */
+  #work > .section-head{
+    border-bottom:0!important;
+    margin-bottom:42px!important;
+    padding-bottom:0!important;
+  }
+  #work > .feature,
+  #work > .greenlife-feature,
+  #work > .canard-feature,
+  #work > .precinct-exact-feature,
+  #work > .flagstix-final-feature,
+  #work > .oneoffs-final-feature{
+    border:0!important;
+    margin-bottom:34px!important;
+  }
+  #work > .oneoffs-final-feature{margin-bottom:0!important;}
+}
+
+@media(max-width:560px){
+  #work > .section-head{
+    border-bottom:0!important;
+    padding-bottom:0!important;
+    margin-bottom:16px!important;
+  }
+  #work > .feature,
+  #work > .greenlife-feature,
+  #work > .canard-feature,
+  #work > .precinct-exact-feature,
+  #work > .flagstix-final-feature,
+  #work > .oneoffs-final-feature{
+    border:0!important;
+    margin-bottom:10px!important;
+  }
+  #work > .oneoffs-final-feature{margin-bottom:0!important;}
+}
