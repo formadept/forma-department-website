@@ -481,3 +481,41 @@
   }
   #work > .oneoffs-final-feature{margin-bottom:0!important;}
 }
+
+/* Semantic portfolio text overlay — preserves approved artwork while making project copy real/selectable HTML */
+.semantic-canvas{position:relative!important;overflow:hidden!important}.semantic-canvas>img{position:relative;z-index:1}.semantic-copy{position:absolute;z-index:3;background:#f5f2e9;color:#073d32;font-family:"DM Sans",Arial,sans-serif}.semantic-copy .project-kicker{font-size:clamp(6px,.58vw,11px);font-weight:700;letter-spacing:.14em;margin:0 0 .7vw;text-transform:uppercase;color:#66847d}.semantic-copy h3{font-family:"Oswald",Impact,sans-serif!important;font-weight:700!important;font-size:clamp(25px,3.55vw,68px)!important;line-height:.9!important;letter-spacing:-.03em!important;color:#073d32!important;margin:0 0 .7vw!important}.semantic-copy h4{font-family:"DM Sans",Arial,sans-serif;font-size:clamp(8px,1.15vw,22px);line-height:1;margin:-.1vw 0 1vw;letter-spacing:.12em;color:#073d32}.semantic-copy>p:not(.project-kicker):not(.project-meta){font-size:clamp(7px,.82vw,15px);line-height:1.42;margin:0 0 1vw;color:#315e53}.semantic-copy .project-meta{font-size:clamp(5px,.5vw,10px);line-height:1.65;letter-spacing:.14em;margin:0;text-transform:uppercase;color:#78908a}.pos-greenlife{left:3.6%;top:7.5%;width:23.5%;height:31%;padding:.2% .4%}.pos-greenlife h3{font-size:clamp(28px,4.15vw,72px)!important}.pos-canard{left:69.3%;top:7.2%;width:27%;height:38%;padding:6.2% .5% .3%}.pos-canard .project-kicker{position:absolute;top:0;left:0}.pos-precinct{left:5.1%;top:4.2%;width:20.8%;height:55%;padding:.2% .3%}.pos-precinct h3{font-size:clamp(26px,3.45vw,65px)!important}.pos-precinct>p:not(.project-kicker):not(.project-meta){font-size:clamp(6px,.68vw,13px)}.pos-flagstix{left:65.4%;top:11.4%;width:28.5%;height:37%;padding:.3% .4%}.pos-flagstix h3{font-size:clamp(26px,3.5vw,66px)!important}.pos-flagstix>p:not(.project-kicker):not(.project-meta){font-size:clamp(6px,.69vw,13px)}.pos-oneoffs{left:5.1%;top:7.4%;width:24.8%;height:50%;padding:.2% .3%}.pos-oneoffs h3{font-size:clamp(28px,3.65vw,69px)!important}.pos-oneoffs>p:not(.project-kicker):not(.project-meta){font-size:clamp(6px,.72vw,14px)}
+@media(max-width:700px){.semantic-copy .project-kicker{font-size:5px}.semantic-copy h3{font-size:clamp(16px,4vw,28px)!important}.semantic-copy h4{font-size:6px}.semantic-copy>p:not(.project-kicker):not(.project-meta){font-size:5px}.semantic-copy .project-meta{font-size:4px}.pos-greenlife h3,.pos-canard h3,.pos-precinct h3,.pos-flagstix h3,.pos-oneoffs h3{font-size:clamp(16px,4vw,28px)!important}}
+
+/* Final overlap fixes: sampled from each original board so the HTML copy
+   cleanly replaces the baked-in copy without a visible second layer. */
+.pos-greenlife{
+  background:#f4f1e8 url("assets/greenlife-paper.jpg") center/cover no-repeat!important;
+  left:3.55%!important;
+  top:7.1%!important;
+  width:23.9%!important;
+  height:31.8%!important;
+}
+.pos-precinct{
+  background:#f7f6ee url("assets/precinct-paper.jpg") center/cover no-repeat!important;
+  left:4.95%!important;
+  top:3.0%!important;
+  width:22.8%!important;
+  height:53.5%!important;
+}
+
+/* FINAL: preserve the approved flattened portfolio boards exactly.
+   Semantic project copy remains in the document for SEO/accessibility,
+   but no cream overlay can cover shirts, cans, logos or artwork. */
+.semantic-copy{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  clip-path:inset(50%)!important;
+  white-space:nowrap!important;
+  border:0!important;
+  background:transparent!important;
+}
